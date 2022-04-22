@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+/*************** NAV *************/
+nav {
+    background-color: #242645;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1.25rem;
+
+}
+
+nav img{
+    width: 50px;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+    /* opacity: 0; este es otro modo de ocultarlo */
+}
+
+input#menu-hamburguesa~ul{
+    background-color: #242645;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all .3s linear;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0%;
+    padding-left: 10px;
+}
+
+#nav,
+#servicios,
+#sobreMi,
+#habilidades,
+#portafolio,
+#contacto{
+    padding-top: 190px;
+}
+
+
+
+nav div ul{
+    background-color: #242645;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #D1CECA;
+    font-size: 1rem;
+}
+
+nav ul li a:hover{
+    color: #34b0be;
+}
+
+
+/* Quisbert */
+
+nav>p{
+    font-size: 25px;
+    color: #34b0be;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+/****************** HEADER **************/    
+
+header{
+    background-color: #e5e5e5;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.perfil{
+    width: 80%;
+    position: botton;
+
+}
+
+
+.iconos img{
+    border-radius: 30%;
+}
+
+/* t1 */
+.t1{
+    font-size: 1rem;
+    padding: 5px 0px;
+}
+
+.t2{
+    font-size: 1.6rem;
+    padding: 5px 0;
+}
+
+.pink{
+    color: #ff4f6f;
+}
+
+.blue{
+    color: #060b35;
+}
+
+.f-f{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/*iconos redes sociales*/
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.box{
+    border-style: solid;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #34b0be;
+    
+}
+
+.br{
+    border-bottom: 0.5px solid #302728;
+    margin: 5px 0px;
+}
+
+/*contacto-sobre*/
+
+.contact{
+    background-color: #ff4f6f;
+    border-bottom-right-radius: 20px 50%;
+    border-top-right-radius:20px 50% ;
+    margin-top: 20px;
+}
+.contact ul li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 8px;
+}
+
+.contact ul {
+    padding-left: 20%; /* FG*/
+}
+.contact ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact ul li a:hover{
+    color: #34b0be ;
+}
+
+
+.hola img{
+    width: 100%;
+}
+/***********   MAIN  **************/
+
+/*subtitulos*/
+.sub{
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 36px;
+
+}
+
+
+
+/*SERVICIOS*/
+
+.grid{
+    display: grid;
+    gap: 8%;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
+
+}
+
+
+.center{
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.icon img{
+    width: 48px;
+    padding-top: 20px;
+}
+.rect{
+    width: 60px;
+}
+
+
+main{
+    background-color: #e5e5e5;
+}
+
+
+
+/*ACERCA.DE.MI*/
+
+.description2{
+    padding: 0 10%;
+
+}
+
+.coin2{
+    height: 100px;
+}
+
+
+.coins{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+}
+.academy{
+    text-align: center;
+}
+
+
+/*MIS HABILIDADES*/
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+}
+
+.list2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.percentage{
+    padding: 20px;
+    background-color: white;
+    border-top: 4px solid #34b0be;
+    border-radius: 4px;
+}
+
+.percentage p{
+    font-size: 30px;
+}
+
+.text{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.text p{
+    font-size: 20px;
+}
+
+
+/*PORTAFOLIO*/
+
+.slider{
+    display: flex;
+    flex-direction: row;
+}
+
+.box3{
+    width: 900px;
+    background-color: red;
+    margin: 20px;
+
+}
+
+.box3 img{
+    width: 250px;
+    text-align: center;
+}
+
+.box3 p{
+    padding-left: 20px;
+}
+
+/*SLIDER*/
+.slider{
+    width: 80%;
+    height: 300px; /*600px original*/   /*300px*/
+    overflow: hidden;
+    /* justify-content: center; */
+    /* display: inline-block; */
+    margin-left: 10%;
+    padding-top: 10px;
+    margin-top: 30px    ;
+    /* background-color: aqua; */
+
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 300%;  /*400%* original/    /*300%*/
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+    margin: 0 50px;
+    background-color: white;
+    
+}
+
+.slider img{
+    height: 200px;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}  /*20%*/
+
+    25%{margin-left: -100%;}  /*25%*/
+    45%{margin-left: -100%;} /*45%*/
+    
+    50%{margin-left: -200%;} /*50%*/
+    70%{margin-left: -200%;} /*70%*/
+    
+    75%{margin-left: -280%;} /*75%*/
+    100%{margin-left: -280%;}
+}
+
+li div{
+    /* justify-content: center; */
+    text-align: center;
+}
+
+
+/*FOOTER // CONTACTO*/
+
+.contact-me{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.icon4 img{
+    background-color: #34b0be;
+    height: 48px;
+}
+
+.contact2{
+    text-align: center;
+    /* background-color: #e5e5e5; */
+}
+
+#contact2{
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.consejo{
+    padding-bottom: 30px;
+}
+
+.consejo p{
+    text-align: center;
+    color: #34b0be;
+    font-size: 24px;
+    padding: 30px;
+}
+
+
+/*********  MEDIA  *********/
+
+@media only screen and ( min-width: 768px ){
+   
+    #nav,
+    #servicios,
+    #sobreMi,
+    #habilidades,
+    #portafolio,
+    #contacto{
+        padding-top: 90px;
+    }
+
+    .perfil{
+        width: 90%;
+        
+    }
+    
+    label{
+        display: none;
+    }
+    
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex; 
+    }
+
+    input#menu-hamburguesa ~ ul > li{
+        padding: 0 1rem;
+    }
+    
+
+    /*Fuentes*/
+    .sub{
+        font-size: 50px;
+    }
+    
+    .t1{
+        font-size: 1.6rem;
+        padding: 5px 0px;
+    }
+    
+    .t2{
+        font-size: 2.6rem;
+        padding: 5px 0;
+    }
+
+    /*acerca de mi*/
+    .description2{
+        padding: 0 20%;
+    }
+
+
+    /*footer*/
+    .contact-me{
+        padding-top: 100px;
+    }
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0%;}  /*20%*/
+    
+    75%{margin-left: -25%;} /*75%*/
+    100%{margin-left: -25%;}
+}
+
+/* @keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}  /*20%
+
+    25%{margin-left: -0%;}  /*25%
+    45%{margin-left: -10%;} /*45%
+    
+    50%{margin-left: -10%;} /*50%
+    70%{margin-left: -20%;} /*70%
+    
+    75%{margin-left: -20%;} /*75%
+    100%{margin-left: -30%;}*/
+
+
+
+/*subtitulos*/
+
+
+
+    /* nav{
+        text-align: center;
+        padding-top: 15px;
+        position: fixed;
+        width: 100%;
+    }
+    ul li{
+        display: inline;
+        padding: 25px;
+    }
+    nav ul li a:hover{
+        transition: 0.5s;
+        color: red;
+    }
+    nav ul #marca a{
+        color: rgb(204, 22, 16);
+        background-color: black;
+        padding: 10px;
+        border-radius: 10%;
+        float: left;
+        position: relative;
+        top: -10px;
+        font-family: Arial, Helvetica, sans-serif;
+        left: 20px;
+    } */
+    
