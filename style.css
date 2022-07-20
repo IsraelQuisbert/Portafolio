@@ -172,45 +172,38 @@ header{
 
 /***********   MAIN  **************/
 
+main{
+    background-color: #e5e5e5;
+}
+
 /*subtitulos*/
 .sub{
     text-align: center;
-    padding: 40px 0px;
-    font-size: 36px;
-
+    padding: 30px 0px;
+    font-size: 40px;
 }
-
-
 
 /*SERVICIOS*/
 
 .grid{
     display: grid;
-    gap: 8%;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px;
+    gap: 5%;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px 250px 250px 250px;
     justify-content: center;
 
 }
-
 
 .center{
     text-align: center;
     background-color: white;
     border-radius: 15px;
+    padding: 0 15px;
 }
 
 .icon img{
     width: 48px;
     padding-top: 20px;
-}
-.rect{
-    width: 60px;
-}
-
-
-main{
-    background-color: #e5e5e5;
 }
 
 
