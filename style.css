@@ -92,6 +92,10 @@ header{
     text-align: center;
 }
 
+.profile{
+    justify-content: center;
+    width: 200px;
+}
 .perfil{
     width: 200px;
     /* position: botton; */
@@ -334,6 +338,9 @@ li div{
         padding-top: 90px;
     }
 
+    /* //!.profile{
+        width: 100px;
+    } */
     .perfil{
         width: 90%;
         
