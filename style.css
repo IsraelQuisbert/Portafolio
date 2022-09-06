@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 
 }
+
+body{
+    width: 100%;
+}
 /*************** NAV ***********************************************************/
 nav {
     background-color: #242645;
@@ -13,7 +17,6 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: .5rem 1.25rem;
-
 }
 
 nav img{
@@ -82,24 +85,19 @@ nav>div>p{
 
 header{
     background-color: #e5e5e5;
-
 }
 
 .row{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     text-align: center;
 }
 
 .profile{
-    justify-content: center;
-    width: 200px;
+    width: 100%;
 }
 .perfil{
     width: 200px;
-    /* position: botton; */
-
 }
 
 /* t1 */
@@ -142,18 +140,12 @@ header{
     color: #34b0be;
 }
 
-.br{
-    border-bottom: 0.5px solid #302728;
-    margin: 5px 0px;
-}
-
 /*contacto-sobre*/
-
 .contact{
     background-color: #ff4f6f;
     border-bottom-right-radius: 20px 50%;
     border-top-right-radius:20px 50% ;
-    margin-top: 20px;
+    margin-top: 20px;    
 }
 .contact ul li{
     display: inline-block;
@@ -161,19 +153,28 @@ header{
     padding: 3px 8px;
 }
 
-.contact ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-.contact ul li a:hover{
-    color: #34b0be ;
-}
 
 .cv{
     width: 2rem;
 }
+.sobre{
+    background-color: #ff4f6f;
+    border-bottom-right-radius: 20px 50%;
+    border-top-right-radius: 20px 50% ;
+    margin-top: 20px;
+}
+.sobre>p>a{
+    text-decoration: none;
+    color: white;    
+}
+.sobre>p>a:hover{
+    color: #34b0be;
+}
+.contenedor{
+    width: 100%;
+}
 
+/*!
 /***********   MAIN  **************/
 
 main{
@@ -290,10 +291,11 @@ li div{
 
 .contact-me{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
     justify-content: center;
     padding-bottom: 100px;
+    align-items: center;
 }
 
 .icon4 img{
@@ -324,11 +326,32 @@ li div{
     padding: 30px;
 }
 
+.icon5 img{
+    height: 48px;
+}
+.icon5>img:hover{
+    cursor: pointer;
+}
+
 
 /*********  MEDIA  *********/
 
+@media only screen and ( min-width: 350px ) and (max-width: 767){
+    
+    .contenedor{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre{
+        width: 300px;
+    }
+}
 @media only screen and ( min-width: 768px ){
-
+    .row{
+        flex-direction: row;
+    }
+    
     #nav,
     #servicios,
     #sobreMi,
@@ -338,11 +361,10 @@ li div{
         padding-top: 90px;
     }
 
-    /* //!.profile{
-        width: 100px;
-    } */
+
+    
     .perfil{
-        width: 90%;
+        width: 400px;
         
     }
     
@@ -360,6 +382,18 @@ li div{
         padding: 0 1rem;
     }
     
+
+    /*MIS HABILIDADES*/
+    .grid{
+        display: grid;
+        gap: 5%;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px 250px;
+        justify-content: center;
+    
+    }
+
+
 
     /*Fuentes*/
     .sub{
