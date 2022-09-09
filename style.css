@@ -81,48 +81,40 @@ nav>div>p{
 
 
 
-/************************************* HEADER **********************************/    
+/**** HEADER ***************/    
 
 header{
     background-color: #e5e5e5;
 }
-
 .row{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
 .profile{
     width: 100%;
 }
 .perfil{
     width: 200px;
 }
-
 /* t1 */
 .t1{
     font-size: 2rem;
     padding: 5px 0px;
 }
-
 .t2{
     font-size: 1.6rem;
     padding: 5px 0;
 }
-
 .pink{
     color: #ff4f6f;
 }
-
 .blue{
     color: #060b35;
 }
-
 .f-f{
     font-family: 'Work Sans', sans-serif;
 }
-
 
 /*iconos redes sociales*/
 .icons{
@@ -140,28 +132,22 @@ header{
     color: #34b0be;
 }
 
-/*contacto-sobre*/
-.contact{
-    background-color: #ff4f6f;
-    border-bottom-right-radius: 20px 50%;
-    border-top-right-radius:20px 50% ;
-    margin-top: 20px;    
-}
-.contact ul li{
-    display: inline-block;
-    vertical-align: middle;
-    padding: 3px 8px;
-}
-
-
-.cv{
-    width: 2rem;
+/*!contacto-en-sobre*/
+.contenedor{
+    /* width: 300px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    margin-left: 10%;
 }
 .sobre{
     background-color: #ff4f6f;
     border-bottom-right-radius: 20px 50%;
     border-top-right-radius: 20px 50% ;
     margin-top: 20px;
+    width: 300px;
 }
 .sobre>p>a{
     text-decoration: none;
@@ -170,12 +156,12 @@ header{
 .sobre>p>a:hover{
     color: #34b0be;
 }
-.contenedor{
-    width: 100%;
+.cv{
+    width: 2rem;
 }
 
 /*!
-/***********   MAIN  **************/
+/**  MAIN  **************/
 
 main{
     background-color: #e5e5e5;
@@ -351,9 +337,9 @@ li div{
 }
 
 
-/*********  MEDIA  *********/
+/*** MEDIA QUERY *********/
 
-/* entre 350 a 767 */
+/*//! entre 350 a 767 */
 @media only screen and ( min-width: 350px ) and (max-width: 767){
     
     .contenedor{
@@ -366,7 +352,8 @@ li div{
     }
 }
 
-/* de 768 pa arriba */
+
+/*//! de 768 pa arriba */
 @media only screen and ( min-width: 768px ){
     .row{
         flex-direction: row;
