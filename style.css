@@ -123,7 +123,6 @@ header{
     justify-content: center;
     margin-bottom: 10px;
 }
-
 .box{
     border-style: solid;
     padding: 5px;
@@ -133,15 +132,7 @@ header{
 }
 
 /*!contacto-en-sobre*/
-.contenedor{
-    /* width: 300px; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    text-align: center;
-    margin-left: 10%;
-}
+
 .sobre{
     background-color: #ff4f6f;
     border-bottom-right-radius: 20px 50%;
@@ -178,39 +169,36 @@ main{
 
 .grid{
     display: grid;
-    gap: 5%;
+    gap: 50px;
     grid-template-columns: 250px;
     grid-template-rows: 250px 250px 250px 250px;
     justify-content: center;
-
 }
-
 .center{
     text-align: center;
     background-color: white;
     border-radius: 15px;
     padding: 0 15px;
+    /* width: 300px; */
 }
-
 .icon img{
     width: 48px;
     padding-top: 20px;
 }
+.t3,
+    .description{
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
 
 
-/*ACERCA.DE.MI*/
-
+/***ACERCA.DE.MI*/
 .description2{
     padding: 0 10%;
-
 }
-
 .coin2{
     height: 100px;
 }
-
-
 .coins{
     display: flex;
     flex-direction: row;
@@ -223,8 +211,7 @@ main{
 }
 
 
-/*MIS HABILIDADES*/
-
+/**MIS HABILIDADES*/
 .list{
     display: flex;
     flex-direction: column;
@@ -264,15 +251,17 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* margin-bottom: 40px; */
 }
 
 .proyecto{
     border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 .card{
     border-radius: 25px;
-    border: 3px solid black;
+    border: 3px solid rgb(0, 13, 128);
     z-index: 999;
 }
 
@@ -358,7 +347,7 @@ li div{
     .row{
         flex-direction: row;
     }
-    
+
     #nav,
     #servicios,
     #sobreMi,
@@ -368,17 +357,15 @@ li div{
         padding-top: 90px;
     }
 
-
-    
     .perfil{
         width: 400px;
         
     }
-    
+
     label{
         display: none;
     }
-    
+
     input#menu-hamburguesa~ul{
         position: static;
         background-color: transparent;
@@ -388,18 +375,25 @@ li div{
     input#menu-hamburguesa ~ ul > li{
         padding: 0 1rem;
     }
-    
 
-    /*MIS HABILIDADES*/
+
+    /** SERVICIOS*/
+
     .grid{
         display: grid;
-        gap: 5%;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 250px 250px;
-        justify-content: center;
-    
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 350px 350px;
     }
 
+    .t3{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1.5rem;
+    }
+
+
+    /*MIS HABILIDADES*/
 
 
     /*Fuentes*/
