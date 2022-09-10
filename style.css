@@ -265,7 +265,9 @@ main{
     z-index: 999;
 }
 
-
+.proyecto>div>p{
+    padding: 0 10px;
+}
 /*SLIDER*/
 
 
