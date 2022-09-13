@@ -151,6 +151,14 @@ header{
     width: 2rem;
 }
 
+.sobre>p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
 /*!
 /**  MAIN  **************/
 
@@ -195,7 +203,7 @@ main{
 /***ACERCA.DE.MI*/
 .description2{
     padding: 0 10%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 .coin2{
